@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CDFB6E48153D14BC0054427C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6E47153D14BC0054427C /* main.cpp */; };
-		CDFB6E4A153D14BC0054427C /* SWPUE4_Composite.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = CDFB6E49153D14BC0054427C /* SWPUE4_Composite.1 */; };
+		CDFB6E54153D16120054427C /* QtGui.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB6E53153D16120054427C /* QtGui.framework */; };
+		CDFB6E56153D16170054427C /* QtCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB6E55153D16170054427C /* QtCore.framework */; };
+		CDFB6E69153D1DEA0054427C /* DemoWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDFB6E67153D1DEA0054427C /* DemoWindow.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +20,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				CDFB6E4A153D14BC0054427C /* SWPUE4_Composite.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,7 +28,17 @@
 /* Begin PBXFileReference section */
 		CDFB6E43153D14BC0054427C /* SWPUE4-Composite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "SWPUE4-Composite"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFB6E47153D14BC0054427C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CDFB6E49153D14BC0054427C /* SWPUE4_Composite.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SWPUE4_Composite.1; sourceTree = "<group>"; };
+		CDFB6E51153D15740054427C /* Graphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphic.h; sourceTree = "<group>"; };
+		CDFB6E53153D16120054427C /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = Library/Frameworks/QtGui.framework; sourceTree = SDKROOT; };
+		CDFB6E55153D16170054427C /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = Library/Frameworks/QtCore.framework; sourceTree = SDKROOT; };
+		CDFB6E59153D168F0054427C /* GraphicComposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicComposite.h; sourceTree = "<group>"; };
+		CDFB6E5C153D1AD30054427C /* HouseGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseGraphic.h; sourceTree = "<group>"; };
+		CDFB6E5F153D1B600054427C /* RectangleGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RectangleGraphic.h; sourceTree = "<group>"; };
+		CDFB6E62153D1B6B0054427C /* CircleGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleGraphic.h; sourceTree = "<group>"; };
+		CDFB6E65153D1BA40054427C /* TriangleGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TriangleGraphic.h; sourceTree = "<group>"; };
+		CDFB6E67153D1DEA0054427C /* DemoWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DemoWindow.cpp; sourceTree = "<group>"; };
+		CDFB6E68153D1DEA0054427C /* DemoWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoWindow.h; sourceTree = "<group>"; };
+		CDFB6E6C153D22010054427C /* HouseRowGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HouseRowGraphic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB6E56153D16170054427C /* QtCore.framework in Frameworks */,
+				CDFB6E54153D16120054427C /* QtGui.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				CDFB6E46153D14BC0054427C /* SWPUE4-Composite */,
+				CDFB6E57153D16240054427C /* Frameworks */,
 				CDFB6E44153D14BC0054427C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,9 +75,34 @@
 			isa = PBXGroup;
 			children = (
 				CDFB6E47153D14BC0054427C /* main.cpp */,
-				CDFB6E49153D14BC0054427C /* SWPUE4_Composite.1 */,
+				CDFB6E67153D1DEA0054427C /* DemoWindow.cpp */,
+				CDFB6E68153D1DEA0054427C /* DemoWindow.h */,
+				CDFB6E6A153D1DF80054427C /* Graphic */,
 			);
 			path = "SWPUE4-Composite";
+			sourceTree = "<group>";
+		};
+		CDFB6E57153D16240054427C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB6E55153D16170054427C /* QtCore.framework */,
+				CDFB6E53153D16120054427C /* QtGui.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDFB6E6A153D1DF80054427C /* Graphic */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB6E51153D15740054427C /* Graphic.h */,
+				CDFB6E59153D168F0054427C /* GraphicComposite.h */,
+				CDFB6E5F153D1B600054427C /* RectangleGraphic.h */,
+				CDFB6E62153D1B6B0054427C /* CircleGraphic.h */,
+				CDFB6E65153D1BA40054427C /* TriangleGraphic.h */,
+				CDFB6E5C153D1AD30054427C /* HouseGraphic.h */,
+				CDFB6E6C153D22010054427C /* HouseRowGraphic.h */,
+			);
+			name = Graphic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFB6E48153D14BC0054427C /* main.cpp in Sources */,
+				CDFB6E69153D1DEA0054427C /* DemoWindow.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +212,7 @@
 		CDFB6E4E153D14BC0054427C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -179,6 +220,7 @@
 		CDFB6E4F153D14BC0054427C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

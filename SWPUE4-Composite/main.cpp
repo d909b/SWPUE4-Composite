@@ -6,13 +6,17 @@
 //  Copyright (c) 2012 Patrick Schwab. All rights reserved.
 //
 
-#include <iostream>
+#include <QtGui/QApplication.h>
+#include "DemoWindow.h"
 
-int main(int argc, const char * argv[])
+int main(int argc, char * argv[])
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    QApplication app(argc, argv);
+    
+    DemoWindow window;
+    
+    window.show();
+    
+    return app.exec();
 }
 
